@@ -1,0 +1,77 @@
+body {
+    height: 100%;
+    text-align: center;
+}
+
+#main {
+    background-color: rgb(226, 226, 226);
+}
+
+#title {
+    font-size: 3em;
+    color: rgb(25, 25, 25);
+}
+
+#upper-head {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+#upper-head>div {
+    font-size: 1.3em;
+}
+
+#img-div {
+    padding: 10px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    border: 5px solid gray;
+}
+
+img {
+  display:block;
+    max-width: 30%;
+    border: 10px outset gray;
+  margin:0 auto;
+}
+
+#img-caption {
+    padding: 5px;
+}
+
+#tribute-info>h3 {
+    font-size: 1.5em;
+    padding: 40px 0 10px 0;
+}
+
+ul {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#tribute-info li {
+    text-align: left;
+    padding: 5px 20px 25px 10px;
+    line-height: 25px;
+}
+
+#source {
+    padding: 10px;
+    font-size:1.3em;
+}
+#quote
+{
+    padding:40px 0 30px 0;
+    font-size:1.5em;
+    font-style:italic;
+}
+#quote cite{
+    font-size:0.8em;
+}
+#link
+{
+    font-size:1.2em;
+    font-weight: bold;
+    padding: 5px 0 15px 0;
+}
