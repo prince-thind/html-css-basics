@@ -1,2 +1,2 @@
-# html-css-basics
-a repository containing a collection of basic html and css pages
+# A-Tribute-Page
+A small tribute page dedicated to Sir Nikola Tesla.
