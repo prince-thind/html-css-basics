@@ -1,2 +1,2 @@
-# html-css-basics
-a repository containing a collection of basic html and css pages
+# A-Technical-Documentation-Page
+A simple Technical Documentation page. Demonstrates bulk sectioning of texts and simple use of media queries.
