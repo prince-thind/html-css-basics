@@ -1,2 +1,1 @@
-# html-css-basics
-a repository containing a collection of basic html and css pages
+A Visual Replication of Google's homepage using HTML and pure CSS

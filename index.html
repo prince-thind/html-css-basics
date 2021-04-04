@@ -1,61 +1,68 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <title>
-        Google Homepage
-    </title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <header>
-        <div id="header">
-            <a href="#" class="Upperbuttons">Gmail</a>
-            <a href="#" class="Upperbuttons">Images</a>
-            <a href="#"><img src="Media/PNGs/smallgrid.png" alt="User Image" id="gridimg"></a>
-            <a href="#"><img src="Media/PNGs/user.png" alt="User Image" id="userimg"></a>
-
-        </div>
+  <head>
+    <title>Google Homepage</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="Upper-buttons">Gmail</a>
+      <a href="#" class="Upper-buttons">Images</a>
+      <a href="#"
+        ><img src="Media/PNGs/smallgrid.png" alt="User Image" class="grid-img"
+      /></a>
+      <a href="#"
+        ><img src="Media/PNGs/user.png" alt="User Image" class="user-img"
+      /></a>
     </header>
     <main>
-        <img src="Media/PNGs/google.png" alt="Google logo" id="googleLogo">
-        <div id="Soutline">
-            <input type="text" name="searchField" id="searchField" placeholder="Search or type URL">
-        </div>
-        <div id="buttonsDiv">
-            <label for=gSearch>
-                <input type="button" id="gSearch" name="gSearch" class="buttons" value="Google Search">
-            </label>
-            <label for=ILucky>
-                <input type="button" id="ILucky" name="ILucky" class="buttons" value="I'm Feeling Lucky">
-            </label>
-        </div>
+      <img src="Media/PNGs/google.png" alt="Google logo" class="google-logo" />
+
+      <input
+        type="text"
+        name="searchField"
+        id="search-box"
+        class="search-box"
+        placeholder="Search or type URL"
+      />
+      <div class="button-container">
+        <label for="gSearch">
+          <input
+            type="button"
+            id="gSearch"
+            name="gSearch"
+            class="button"
+            value="Google Search"
+          />
+        </label>
+        <label for="ILucky">
+          <input
+            type="button"
+            id="ILucky"
+            name="ILucky"
+            class="button"
+            value="I'm Feeling Lucky"
+          />
+        </label>
+      </div>
     </main>
     <footer>
-        <div class="footer" id="foot3">
-            <ul>
-                <li><a href="#">India</a></li>
-            </ul>
-        </div>
-        <div class="footer" id="foot2">
-            <ul>
-                <li><a href="#">Advertisiing</a></li>
-                <li><a href="#">Business</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">How Search works</a></li>
-            </ul>
-        </div>
-
-        <div class="footer" id="foot1">
-            <ul>
-                <li><a href="#">Privacy</a></li>
-                <li><a href="#">Terms</a></li>
-                <li><a href="#">Settings</a></li>
-            </ul>
-        </div>
-
+      <div class="footer-bar">
+        <a href="#" class="footer-token">India</a>
+      </div>
+      <div class="footer-bar bottom-bar">
+        <ul>
+          <li><a href="#">Advertising</a></li>
+          <li><a href="#">Business</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">How Search works</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Settings</a></li>
+        </ul>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>

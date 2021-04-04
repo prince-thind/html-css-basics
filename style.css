@@ -1,152 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+:root {
+  text-align: center;
+}
+
 /*header*/
-#header{
-    margin-top: 20px;
-    display: flex;
-    width:100%;
-    justify-content: flex-end;
+.header {
+  margin-top: 1.2rem;
+  display: flex;
+  justify-content: flex-end;
 }
-.Upperbuttons
-{
-    text-align: center;
-    text-decoration: none ;
-    color:rgba(0, 0, 0, 0.7);
-    position: relative;
-    padding:5px;
-
+.header > * {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
 }
-.Upperbuttons:hover
-{
-   text-decoration: underline;
-
+.Upper-buttons {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
 }
-#gridimg
-{
-    height:30px;
-    width:30px;
-    transform :scale(0.6);
-    opacity:0.9;
-    margin-right:5px;
-    padding-left: 5px;
-
+.Upper-buttons:hover {
+  text-decoration: underline;
 }
-#userimg
-{
-    height:30px;
-    width:30px;
-    border-radius: 50%;
-    margin-right: 10px;
-    margin-left: 5px;
+.grid-img {
+  height: 1.3rem;
+  width: 1.3rem;
+  opacity: 0.9;
 }
-
-
+.user-img {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+}
 
 /*main content*/
-#googleLogo
-{
-    display: block;
-    margin:0 auto;
-    padding-top:100px;
-}
-#Soutline
-{
-    margin:0 auto;
-    margin-top:30px;
-    width:550px;
-    height:40px;
-    border-style: solid;
-    border-width:1px;
-    border-radius: 50px;
-    border-color: rgba(0, 0, 0, 0.3);
-}
-#Soutline:hover
-{
-    box-shadow:1px 1px 3px 1px rgba(0,0,0,0.3) ;
-    transform:scale(1.01);
-}
-#searchField
-{
-   border-style:hidden;
+.google-logo {
   display: block;
-  margin: 5px auto;
-  width:500px;
-  height:30px;
+  margin: 0 auto;
+  padding-top: 6rem;
 }
-#searchField:focus
-{
-outline:none;
+.search-box {
+  margin: 2rem auto 0 auto;
+  border-radius: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 0.1rem 0 0.1rem 1.5rem;
+  height: 2.2rem;
+  width: 35rem;
+}
+.search-box:hover {
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.3);
+  transform: scale(1.01);
 }
 
-#buttonsDiv
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 20px;
+.search-box:focus {
+  outline: none;
 }
-.buttons
-{
-    margin:10px;
-    width:150px;
-    height:40px;
-    border-style: hidden;
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.buttons:hover
-{
-border-style:solid;
-transform:scale(1.01);
-border-color: rgba(0, 0, 0, 0.3);
-border-width:1px;
+.button {
+  margin: 1rem;
+  width: 150px;
+  height: 40px;
+  border-style: hidden;
+}
+.button:hover {
+  transform: scale(1.01);
+  border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 /*footer*/
-footer{
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    right:0px;
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
-.footer
-{
-    border-style: solid;
-    border-color: rgba(0, 0, 0, 0.2);
-    border-width:1px;
+.footer-bar {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.1);
+  text-align: left;
+  padding: 0.6rem 1.5rem 0.6rem 1.5rem;
 }
-
-.footer ul
-{
+.footer-bar a {
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+}
+.bottom-bar {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-bar > ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  background-color:rgba(0, 0, 0, 0.1);
-}
-.footer li{
-    float: left;
+  display: flex;
+  gap: 1rem;
 }
 
-.footer a{
-    display: block;
-     color:rgba(0, 0, 0, 0.6);
-  text-align: center;
-  padding:10px 12px;
-  text-decoration: none;
-}
-#foot1
-{
-    position: absolute;
-    bottom:0px;
-    right: 10px;
-    border-color: rgba(0, 0, 0, 0);
-   
-    border-style: none;
-
-}
-#foot1 ul
-{
-    background-color:rgba(0, 0, 0, 0);
-}
-
-#foot1 a:hover, #foot2 a:hover
-{
-    text-decoration: underline;
+.footer-bar a:hover,
+.footer-bar a:hover {
+  text-decoration: underline;
 }
