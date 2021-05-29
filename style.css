@@ -17,11 +17,11 @@
   align-items: center;
   padding: 0.5rem;
 }
-.Upper-buttons {
+.button--upper {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.7);
 }
-.Upper-buttons:hover {
+.button--upper:hover {
   text-decoration: underline;
 }
 .grid-img {
@@ -102,7 +102,6 @@ footer {
   gap: 1rem;
 }
 
-.footer-bar a:hover,
 .footer-bar a:hover {
   text-decoration: underline;
 }
