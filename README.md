@@ -1,2 +1,2 @@
-# html-css-basics
-a repository containing a collection of basic html and css pages
+# newtons-disc
+fun little project- creates newton's discs using basic js and css
