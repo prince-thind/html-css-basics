@@ -48,31 +48,43 @@ body {
 }
 .rainbow {
   background: conic-gradient(
-    red 0deg,
-    red 30deg,
-    yellow 30deg,
-    yellow 60deg,
-    green 60deg,
-    green 90deg,
-    aqua 90deg,
-    aqua 120deg,
-    blue 120deg,
-    blue 150deg,
-    purple 150deg,
-    purple 180deg,
-    red 180deg,
-    red 210deg,
-    yellow 210deg,
-    yellow 240deg,
-    green 240deg,
-    green 270deg,
-    aqua 270deg,
-    aqua 300deg,
-    blue 300deg,
-    blue 330deg,
-    purple 330deg,
-    purple 360deg
-
+      hsl(0,75%,50% ),
+     hsl(10,75%,50% ),
+     hsl(20,75%,50% ),
+     hsl(30,75%,50% ),
+     hsl(40,75%,50% ),
+     hsl(50,75%,50% ),
+     hsl(60,75%,50% ),
+     hsl(70,75%,50% ),
+     hsl(80,75%,50% ),
+     hsl(90,75%,50%),
+    hsl(100,75%,50%) ,
+    hsl(110,75%,50%) ,
+    hsl(120,75%,50%) ,
+    hsl(130,75%,50%) ,
+    hsl(140,75%,50%) ,
+    hsl(150,75%,50%) ,
+    hsl(160,75%,50%) ,
+    hsl(170,75%,50%) ,
+    hsl(180,75%,50%) ,
+    hsl(190,75%,50%) ,
+    hsl(200,75%,50%) ,
+    hsl(210,75%,50%) ,
+    hsl(220,75%,50%) ,
+    hsl(230,75%,50%) ,
+    hsl(240,75%,50%) ,
+    hsl(250,75%,50%) ,
+    hsl(260,75%,50%) ,
+    hsl(270,75%,50%) ,
+    hsl(280,75%,50%) ,
+    hsl(290,75%,50%) ,
+    hsl(300,75%,50%) ,
+    hsl(310,75%,50%) ,
+    hsl(320,75%,50%) ,
+    hsl(330,75%,50%) ,
+    hsl(340,75%,50%) ,
+    hsl(350,75%,50%) ,
+    hsl(360,75%,50%) 
   );
 }
 
@@ -89,5 +101,13 @@ body {
   transform: scale(1);
 }
 
-
 /*js classes*/
+.animation {
+  animation: rain 0.05s forwards infinite linear;
+}
+
+@keyframes rain {
+  100% {
+    transform: rotate(360deg);
+  }
+}
