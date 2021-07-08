@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  min-height: 100vh;
+}
+body {
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(gray, rgb(37, 24, 24)) fixed no-repeat;
+}
+.heading {
+  background-color: rgb(4, 26, 4);
+  padding: 0.5em;
+  border-bottom: 3px black solid;
+}
+.main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.device {
+  padding: 1em;
+  background: radial-gradient(rgb(53, 53, 110), black);
+  border: 2px solid white;
+  margin: 1em;
+}
+.disc-frame {
+  width: 50vw;
+  height: 50vw;
+  background: radial-gradient(rgb(58, 48, 38), black);
+  border: 2px solid gray;
+  margin-bottom: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.disc {
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+.rainbow {
+  background: conic-gradient(
+    red 0deg,
+    red 30deg,
+    yellow 30deg,
+    yellow 60deg,
+    green 60deg,
+    green 90deg,
+    aqua 90deg,
+    aqua 120deg,
+    blue 120deg,
+    blue 150deg,
+    purple 150deg,
+    purple 180deg,
+    red 180deg,
+    red 210deg,
+    yellow 210deg,
+    yellow 240deg,
+    green 240deg,
+    green 270deg,
+    aqua 270deg,
+    aqua 300deg,
+    blue 300deg,
+    blue 330deg,
+    purple 330deg,
+    purple 360deg
+
+  );
+}
+
+.control {
+  padding: 1em;
+  color: white;
+  background-color: rgb(34, 55, 56);
+}
+.control:hover {
+  transform: scale(1.1);
+}
+.control:active {
+  background-color: rgb(19, 30, 31);
+  transform: scale(1);
+}
+
+
+/*js classes*/
