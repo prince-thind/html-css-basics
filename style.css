@@ -31,8 +31,8 @@ body {
   margin: 1em;
 }
 .disc-frame {
-  width: 50vw;
-  height: 50vw;
+  min-width: 50vh;
+  height: 50vh;
   background: radial-gradient(rgb(58, 48, 38), black);
   border: 2px solid gray;
   margin-bottom: 2em;
