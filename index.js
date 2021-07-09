@@ -9,9 +9,12 @@
     if (discRunning) {
       discRunning = false;
       disc.classList.remove('main-animation');
+      button.innerText='Start';
     } else {
       discRunning = true;
       disc.classList.add('main-animation');
+      button.innerText='Stop';
+
     }
   }
 })();
