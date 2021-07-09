@@ -103,23 +103,12 @@ body {
 
 /*js classes*/
 .main-animation {
-  animation: main 0.05s forwards infinite linear;
-}
-.animation1{
-    animation: main 1s forwards linear infinite;
-}
-
-.animation2{
-    animation: main 0.4s forwards linear infinite;
-}
-
-.animation3{
-    animation: main 0.1s forwards linear infinite;
+  animation: main 1s forwards infinite linear;
 }
 
 @keyframes main {
   100% {
-    transform: rotate(360deg);
+    transform: rotate(10000deg);
   }
 }
 
