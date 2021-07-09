@@ -102,12 +102,24 @@ body {
 }
 
 /*js classes*/
-.animation {
-  animation: rain 0.05s forwards infinite linear;
+.main-animation {
+  animation: main 0.05s forwards infinite linear;
+}
+.animation1{
+    animation: main 1s forwards linear infinite;
 }
 
-@keyframes rain {
+.animation2{
+    animation: main 0.4s forwards linear infinite;
+}
+
+.animation3{
+    animation: main 0.1s forwards linear infinite;
+}
+
+@keyframes main {
   100% {
     transform: rotate(360deg);
   }
 }
+
