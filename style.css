@@ -82,6 +82,7 @@ body{
   background-color: rgb(242, 242, 242);
   border-bottom: 1px solid rgb(194, 194, 194);
   font-size: 0.9rem;
+  flex-wrap: wrap;
 }
 .footer-list{
   display: flex;
