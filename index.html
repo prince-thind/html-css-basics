@@ -2,51 +2,66 @@
 <html>
 
 <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Google Homepage</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-
   <header class="header">
-    <a href="#" class="button--upper">Gmail</a>
-    <a href="#" class="button--upper">Images</a>
-    <a href="#"><img src="media/images/smallgrid.png" alt="User Image" class="grid-img" /></a>
-    <a href="#"><img src="media/images/user.png" alt="User Image" class="user-img" /></a>
+    <nav>
+      <ul class="nav-links">
+        <li class="nav-item"><a href="#" class="nav-button">Gmail</a></li>
+        <li class="nav-item"><a href="#" class="nav-button">Images</a></li>
+        <li class="nav-item">
+          <a href="#"><img src="assests/apps.svg" alt="Apps" class="nav-img" /></a>
+        </li>
+        <li class="nav-item">
+          <a href="#"><img src="assests/user.svg" alt="User Profile Picture" class="nav-img" /></a>
+        </li>
+      </ul>
+    </nav>
   </header>
 
-  <main>
-    <img src="media/images/google.png" alt="Google logo" class="google-logo" />
-    <input type="text" name="searchField" id="search-box" class="search-box" placeholder="Search or type URL" />
-    <div class="button-container">
-      <label for="gSearch">
-        <input type="button" id="gSearch" name="gSearch" class="button" value="Google Search" />
-      </label>
-      <label for="ILucky">
-        <input type="button" id="ILucky" name="ILucky" class="button" value="I'm Feeling Lucky" />
-      </label>
-    </div>
+  <main class="main">
+    <img src="assests/google.png" alt="Google logo" class="google-logo" />
+    <form class="form-search">
+      <label for="search-box"></label>
+      <input type="text" name="search-box" id="search-box" class="search-box" placeholder="Search or type URL" />
+      <div class="button-container">
+        <label for="google-button">
+          <button type="submit" value="google-search" class="button" id="google-button">Google Search</button>
+        </label>
+        <label for="lucky-button">
+          <button type="submit" value="lucky-search" class="button" id="lucky-button">I'm feeling Lucky</button>
+        </label>
+      </div>
+    </form>
+
   </main>
 
   <footer>
     <div class="footer-bar">
-      <a href="#" class="footer-token">India</a>
-    </div>
-    <div class="footer-bar bottom-bar">
-      <ul>
-        <li><a href="#">Advertising</a></li>
-        <li><a href="#">Business</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">How Search works</a></li>
+      <ul class="footer-list">
+        <li> <a href="#" class="footer-item">India</a></li>
       </ul>
-      <ul>
-        <li><a href="#">Privacy</a></li>
-        <li><a href="#">Terms</a></li>
-        <li><a href="#">Settings</a></li>
+    </div>
+    <div class="footer-bar">
+      <ul class="footer-list">
+        <li><a class="footer-item" href="#">Advertising</a></li>
+        <li><a class="footer-item" href="#">Business</a></li>
+        <li><a class="footer-item" href="#">About</a></li>
+        <li><a class="footer-item" href="#">How Search works</a></li>
+      </ul>
+      <ul class="footer-list">
+        <li><a class="footer-item" href="#">Privacy</a></li>
+        <li><a class="footer-item" href="#">Terms</a></li>
+        <li><a class="footer-item" href="#">Settings</a></li>
       </ul>
     </div>
   </footer>
-
 </body>
 
 </html>
