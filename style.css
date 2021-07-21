@@ -67,10 +67,6 @@ body {
   min-width: 20rem;
   margin: 0 auto;
 }
-.author {
-  display: inline-block;
-  transform: translateY(1rem);
-}
 
 .wiki-link {
   font-size: 1.2rem;
@@ -85,3 +81,21 @@ a:visited {
   color: gray;
 }
 
+/*media queries*/
+
+@media only screen and (max-width: 750px) {
+    .tribute-info {
+      min-width: 18rem;
+    }
+    .source {
+      font-size: 1.1rem;
+    }
+    .quote {
+      font-size: 1.1rem;
+    }
+    .wiki-link {
+      font-size: 1.1rem;
+      font-weight: normal;
+    }
+  }
+  
