@@ -1,105 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 body {
-    position: relative;
-    background-image: url("./media/background.jpg");
-    background-size: 100%;
-    background-position:center;
-    margin: 0 auto;
-    z-index: 0;
-    color:white;
-    font-family:Tahoma, sans-serif;
+  font-family: Tahoma, sans-serif;
+  background-image: url("./assets/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: hsl(240, 30%, 40%);
+  background-blend-mode: soft-light;
+  text-align: center;
+  color: white;
+}
+.header {
+  padding: 1rem;
+}
+.ruler {
+  margin: 0 auto;
+  width: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.optional-age {
+  font-size: 0.9rem;
+}
+
+.form {
+  margin: 2rem auto;
+  padding: 3rem;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  font-size: 1.3rem;
+  width: 50vw;
+  background-color: hsla(240, 70%, 20%, 0.7);
+}
+.optional {
+  font-size: 0.9rem;
+  display: block;
+}
+.general-info label {
+  display: block;
+  text-align: left;
+  margin: 0.5rem;
+}
+.general-info input,
+.general-info select {
+  display: block;
+  width: 90%;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+  border-radius: 0.3rem;
+}
+
+.fieldset {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding: 1rem 2rem;
+  margin: 2rem;
+}
+.fieldset label {
+  display: block;
+  width: 51%;
+  padding: 0.5rem;
+  text-align: left;
+}
+.fieldset input {
+
+  margin-left: 1rem;
+}
+.textarea {
+  width: 80%;
+  margin-top: 1rem;
+  padding: 1rem 1rem 4rem 1rem;
+  border-radius: 0.3rem;
+}
+.submit {
+  display: block;
+  background-color: rgba(106, 255, 106, 0.678);
+  color: white;
+  width: 90%;
+  margin: 2rem auto;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  font-size: 1.2rem;
+}
+
+/*media queries*/
+
+@media only screen and (max-width: 750px) {
+  .form {
+    width: 80vw;
+    padding: 1rem;
+    margin: 1rem auto;
+    font-size: 1rem;
   }
-  
-  body::after {
-    background-color:rgba(80, 80, 150, 0.5);
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    z-index: -1;   
-  }
-.header
-{
-    text-align: center;
-    padding-top:30px;
-    opacity: 0.9;
-    line-height: 15px;
-}
-.ruler
-{
-    width:70%;
-    border:1px solid rgba(255, 255, 255, 0.541);
-    margin-bottom:50px;
-}
-#description
-{
-    font-size:20px;
-}
-main{
-    background-color:rgba(0, 0, 70, 0.7);
-    margin:auto;
-    width:50vw;
-    padding:40px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius:10px;
-    padding-bottom:50px;
-    
-}
-.survey-form *
-{
-    padding:10px;
-    font-size:large;
-    border-radius: 5px;
-}
-.survey-form>input, .survey-form>select{
-    margin-bottom:20px;
-}
-.survey-form
-{
-    display: flex;
-    flex-direction: column;
-}
-.button-fieldset>legend
-{
-    text-align: center;
-    font-size:20px;
-}
-.optional
-{
-    font-size:15px;
-    opacity:0.8;
-    margin: auto -10px auto -5px;
-}
-.button-fieldset
-{
-    margin-top:30px;
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap:wrap;
-    justify-content: flex-end;
-    align-items: center;
-    padding-left:50px;
-}
-.button-fieldset label{
-    width:70%;
-}
-.button-fieldset input{
-    height:20px;
-    width:20px;
-    margin-right:15px;
-}
-#textarea-label
-{
-    margin-top:20px;
-}
-.textarea
-{
-    margin: 0px 0 30px 0;
-    height: 150px;
-}
-.submit
-{
-    background-color:rgba(106, 255, 106, 0.678);
-    color:white;
+ 
 }
