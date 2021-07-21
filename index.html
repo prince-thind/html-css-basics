@@ -1,43 +1,52 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="body">
+
+<body>
     <header class="header">
-        <h1 id="title">Dummy Restaurant Survey Form</h1>
-        <p id="description">Please fill this Online Survey to help us serve you better</p>
+        <h1 class="heading">Dummy Restaurant Survey Form</h1>
+        <p class="description">Please fill this Online Survey to help us serve you better</p>
     </header>
     <hr class="ruler">
     <main>
-        <form id="survey-form" class="survey-form">
-            <label for="name" id="name-label">Name</label>
-            <input type="text" id="name" placeholder="Enter your Name" required>
-            <label for="email" id="email-label">Email</label>
-            <input type="email" id="email" placeholder="Enter your EMail" required>
-            <label for="number" id="number-label">Age<span class="optional">(Optional)</span></label>
-            <input type="number" id="number" max="120" min="12" placeholder="Enter your Age">
-            <label for="dropdown" id="dropdown-label">Which option best describes you</label>
-            <select name="designation" id="dropdown">
-                <option value="">Please Select an Option</option>
-                <option value="student">Student</option>
-                <option value="business">BusinessMan/BusinessWoman</option>
-                <option value="full-time-job">Full Time Job</option>
-                <option value="self-employed">Self-Employed</option>
-                <option value="staff-member">Staff-Member</option>
-                <option value="other">Other</option>
-            </select>
-            <fieldset class="button-fieldset">
+        <form class="form">
+            <div class="general-info">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your Name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your EMail" required>
+                <label for="age">Age<span class="optional-age">(Optional)</span></label>
+                <input type="number" id="age" max="100" min="12" placeholder="Enter your Age">
+                <label for="dropdown">Which option best describes you?</label>
+                <select name="designation" id="dropdown">
+                    <option value="">Please Select an Option</option>
+                    <option value="student">Student</option>
+                    <option value="business">Business Person</option>
+                    <option value="full-time-employed">Full Time Employed</option>
+                    <option value="self-employed">Self-Employed</option>
+                    <option value="staff-member">Staff-Member</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <fieldset class="button-fieldset fieldset">
                 <legend>How likely are you to recommend this Restaurant to your friends </legend>
                 <label for="radio-button1">Very Likely</label>
-                <input type="radio" value="very-likely" name="recommendation" id="radio-button1">
+                <input type="radio" value="very-likely" name="recommendation" id="radio-button1" checked>
                 <label for="radio-button2">Likely</label>
                 <input type="radio" value="likely" name="recommendation" id="radio-button2">
                 <label for="radio-button3">Not Likely</label>
                 <input type="radio" value="not-likely" name="recommendation" id="radio-button3">
             </fieldset>
-            <fieldset class="button-fieldset">
-                <legend> Which Food Items Would you like to See Improved<span class="optional">(check all that Apply)</span></legend>
+            <fieldset class="checkbox-fieldset fieldset">
+                <legend> Which Food Items Would you like to See Improved<span class="optional">(check all that
+                        Apply)</span></legend>
                 <label for="baked">Baked</label>
                 <input type="checkbox" id="baked" value="baked" name="food">
                 <label for="fried">Fried</label>
@@ -53,10 +62,11 @@
                 <label for="beverages">Beverages</label>
                 <input type="checkbox" id="beverages" value="beverages" name="food">
             </fieldset>
-            <label for="textarea" id="textarea-label"> Other Suggestions and comments<span class="optional">(Optional)</span></label>
-            <textarea class="textarea" placeholder="Enter your Remarks here"></textarea>
-            <button type="submit" id="submit" class="submit"> Submit</button>
+            <label for="textarea"> Other Suggestions and comments<span class="optional">(Optional)</span></label>
+            <textarea class="textarea" id="textarea" placeholder="Enter your Remarks here"></textarea>
+            <button type="submit" class="submit"> Submit</button>
         </form>
     </main>
 </body>
+
 </html>
