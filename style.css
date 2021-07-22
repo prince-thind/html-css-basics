@@ -49,6 +49,7 @@ main {
 .section-heading {
   padding: 0.5em;
   background-color: rgb(196, 220, 228);
+  text-align: center;
 }
 .section-para {
   width: 90%;
@@ -71,9 +72,9 @@ main {
 .section-list > li {
   margin-bottom: 1em;
 }
-.footer{
-  color:white;
-  padding:0.5em;
+.footer {
+  color: white;
+  padding: 0.5em;
   background-color: rgb(22, 22, 22);
 }
 
