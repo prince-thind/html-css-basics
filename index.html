@@ -1,94 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dummy Watches</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header class="header" id="header">
-        <div class="header__icons">
-            <img class="header__icons--img" id="header-img" src="media/vector-watch-icon.svg">
-            <div class="header__icons--text">Original Dummy Watches</div>
+    <header class="header">
+        <div class="header-title">
+            <img class="header-title-img" alt="Company Logo" src="assets/vector-watch-icon.svg">
+            <div class="header-tilte-text">Original Dummy Watches</div>
         </div>
-        <nav class="nav-bar" id="nav-bar">
-            <a href="#features" class="nav-link">
-                <div class="nav-bar__first">Features</div>
-            </a>
-            <a href="#video" class="nav-link">
-                <div class="nav-bar__second">How it works</div>
-            </a>
-            <a href="#pricing" class="nav-link">
-                <div class="nav-bar__third">Pricing</div>
-            </a>
+        <nav class="nav-bar">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#features"> Features </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#video">How it works </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#pricing"> Pricing </a>
+                </li>
+            </ul>
         </nav>
     </header>
-    <h1 class="main-heading">Dummy Watches</h1>
-    <hr class="ruler">
-    <div class="features" id="features">
-        <div class="features__first">
-            <img src="media/vector-quality.svg" class="features__first__img">
-            <h2 class="features__first__head">Quality Assurance</h2>
-            <p class="features__first__description">lorem ipsum Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam maxime nostrum quaerat saepe! Laudantium vitae asperiores quis similique totam, eligendi veniam earum ipsam ratione autem pariatur animi dolor, doloribus sapiente.</p>
+
+    <main>
+        <h1 class="main-heading">Dummy Watches</h1>
+        <hr class="ruler">
+        <ul class="feature-list" id="features">
+            <li class="feature">
+                <img src="assets/vector-quality.svg" alt="Quality Symbol" class="feature-img">
+                <div class="feature-text">
+                    <h2>Quality Assurance</h2>
+                    <p>lorem ipsum Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Aliquam maxime nostrum quaerat saepe! Laudantium vitae asperiores quis similique totam,
+                        eligendi
+                        veniam earum ipsam ratione autem pariatur animi dolor, doloribus sapiente.</p>
+                </div>
+            </li>
+            <li class="feature">
+                <img src="assets/vector-warranty.svg" alt="Warranty Symbol" class="feature-img">
+                <div class="feature-text">
+                    <h2>2 Year Warranty</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
+                        molestias saepe dolor illum modi maxime accusantium ex odio neque ad ipsam nam labore, at nobis
+                        culpa
+                        harum alias veritatis vitae?
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, possimus? Neque rem
+                        reprehenderit, possimus molestiae corporis quam dolor dolorum ullam incidunt cumque nisi placeat
+                        laudantium distinctio repellat inventore officiis laboriosam?</p>
+                </div>
+            </li>
+            <li class="feature">
+                <img src="assets/vector-delivery.svg" alt="Delivery Symbol" class="feature-img">
+                <div class="feature-text">
+                    <h2>Free Delivery</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam in
+                        dolore expedita eum blanditiis, deserunt exercitationem qui iusto ea dolores similique ipsa
+                        architecto
+                        at fugit dignissimos cum tempora eius alias?</p>
+                </div>
+            </li>
+        </ul>
+        <div class="embeded-video">
+            <iframe id="video" class="video-frame" src="https://www.youtube.com/embed/2YBtspm8j8M"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-assets; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <div>Here's a quick review of our Dummy Watches</div>
         </div>
-        <div class="features__second">
-            <img src="media/vector-warranty.svg" class="features__second__img">
-            <h2 class="features__second__head">2 Year Warranty</h2>
-            <p class="features__second__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae molestias saepe dolor illum modi maxime accusantium ex odio neque ad ipsam nam labore, at nobis culpa harum alias veritatis vitae?</p>
-        </div>
-        <div class="features__thrid">
-            <img src="media/vector-delivery.svg" class="features__third__img">
-            <h2 class="features__third__head">Free Delivery</h2>
-            <p class="features__third__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam in dolore expedita eum blanditiis, deserunt exercitationem qui iusto ea dolores similique ipsa architecto at fugit dignissimos cum tempora eius alias?</p>
-        </div>
-    </div>
-    <div class="embeded-video">
-        <iframe id="video" class="embeded-video__video-frame" width="560" height="315" src="https://www.youtube.com/embed/2YBtspm8j8M" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-        <p>Here's a quick review of our Dummy Watches</p>
-    </div>
-    <div class="user-input">
-        <form id="form" class="user-input__form" action="https://www.freecodecamp.com/email-submit">
-            <input type="email" id="email" class="user-input__form__text-field" name="email"
-                placeholder="Enter your email here">
-            <label><input type="submit" id="submit" value="Get Started"></label>
+        <form id="form" class="form">
+            <label for="email" class="accessibility">Enter your Email Here</label>
+            <input type="email" id="email" class="form-input" name="email" placeholder="Enter your email here">
+            <input type="submit" id="submit" value="Get Started" class="form-button">
         </form>
-    </div>
-    <div class="showcase-watches" id="pricing">
-        <div class="showcase-box">
-            <div class="showcase-box__head">Watch A</div>
-            <div class="showcase-box__price">$20</div>
-            <p class="showcase-box__description">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
-            <div class="showcase-box__submit"><a href="#">
-                    <div class="submit-wrapper">Select</div>
-                </a></div>
-        </div>
-        <div class="showcase-box">
-            <div class="showcase-box__head">Watch B</div>
-            <div class="showcase-box__price">$10</div>
-            <p class="showcase-box__description">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
-            <div class="showcase-box__submit"><a href="#">
-                    <div class="submit-wrapper">Select</div>
-                </a></div>
-        </div>
-        <div class="showcase-box">
-            <div class="showcase-box__head">Watch C</div>
-            <div class="showcase-box__price">$45</div>
-            <p class="showcase-box__description">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
 
-            <div class="showcase-box__submit"><a href="#">
-                    <div class="submit-wrapper">Select</div>
-                </a></div>
+        <ul class="showcase-watches" id="pricing">
+            <li class="showcase-box">
+                <div class="showcase-head">Watch A</div>
+                <div class="showcase-price">$20</div>
+                <p class="showcase-description">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+                <a href="#" class="showcase-submit">
+                    Select
+                </a>
+            </li>
+            <li class="showcase-box">
+                <div class="showcase-head">Watch B</div>
+                <div class="showcase-price">$10</div>
+                <p class="showcase-description">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+                <a href="#" class="showcase-submit">
+                    Select
+                </a>
+            </li>
+            <li class="showcase-box">
+                <div class="showcase-head">Watch C</div>
+                <div class="showcase-price">$45</div>
+                <p class="showcase-description">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
 
-        </div>
-    </div>
+                <a href="#" class="showcase-submit">
+                    Select
+                </a>
+            </li>
+        </ul>
+    </main>
     <footer class="footer">
-        <div class="footer-content">
-            <p class="footer-content__privacy f1">Privacy</p>
-            <p class="footer-content__terms f2">Terms</p>
-            <p class="footer-content__contact f3">Contact</p>
-            <p class="footer-content__about f4">About</p>
-        </div>
+        <a href="#" class="footer-item">Privacy</a >
+        <a href="#" class="footer-item">Terms</a >
+        <a href="#" class="footer-item">Contact</a >
+        <a href="#" class="footer-item">About</a >
     </footer>
 </body>
+
 </html>
