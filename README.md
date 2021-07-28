@@ -1,2 +1,2 @@
-# html-css-basics
-a repository containing a collection of basic html and css pages
+# beating-heart
+Beating heart made with pure CSS
