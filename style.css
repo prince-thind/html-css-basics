@@ -2,73 +2,66 @@
   padding: 0;
   margin: 0;
 }
-
-.head {
+:root {
+  --heart-size: 100px;
+}
+body {
+  background-color: hsl(240, 30%, 25%);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.heading {
   text-align: center;
   border: 1px solid rgb(0, 0, 0);
-  background-color: hsl(240,30%,15%);
-  padding: 20px;
-  color:white;
+  background-color: hsl(240, 30%, 15%);
+  padding: 1rem;
+  color: white;
+  text-shadow: 1px 1px 2px black;
 }
-.main-body {
+.main {
+  width: 75vw;
   display: flex;
-  width: 100%;
-  height: 75vh;
+  flex-direction: column;
+  flex: 1;
+  margin: 0 auto;
   border: 1px solid rgb(0, 0, 0);
-  min-height:90vh;
+  border-top: none;
+  background-color: hsl(120, 100%, 20%);
+  box-sizing: border-box;
+  padding: 5rem;
 }
-.main-body > * {
-  border: 1px solid black;
-}
-.left-pane,.right-pane {
-  flex-grow: 1;
-  background-color:hsl(240,30%,25%);
-}
-.middle-pane {
-  flex-grow: 3;
-  background-color: hsl(120,100%,20%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .heart-container {
-  min-height: 400px;
-  min-width: 400px;
-  border: 5px ridge rgb(23, 59, 6);
-  background-color: hsl(30,30%,90%);
+  flex: 1;
+  border: 5px ridge rgb(27, 27, 27);
+  background-color: hsl(30, 30%, 90%);
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.final-frame {
-  position: relative;
-  height: 300px;
-  width: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .heart {
   position: absolute;
-  height: 100px;
-  width: 100px;
+  height: var(--heart-size);
+  width: var(--heart-size);
   background-color: red;
   transform: rotate(45deg);
 }
 .heart::after {
   position: absolute;
-  content: "";
-  height: 100px;
-  width: 100px;
+  content: '';
+  height: var(--heart-size);
+  width: var(--heart-size);
   background-color: red;
   border-radius: 50%;
   bottom: 50px;
 }
 .heart::before {
   position: absolute;
-  content: "";
-  height: 100px;
-  width: 100px;
+  content: '';
+  height: var(--heart-size);
+  width: var(--heart-size);
   background-color: red;
   border-radius: 50%;
   right: 50px;
@@ -123,5 +116,14 @@
   90% {
     transform: scale(1.5) rotate(45deg);
     opacity: 0.3;
+  }
+}
+
+/*media queries*/
+
+@media only screen and (max-width: 760px) {
+  .main {
+    padding: 2rem;
+    width: 100vw;
   }
 }
