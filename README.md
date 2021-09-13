@@ -1,1 +1,2 @@
-A Visual Replication of Google's homepage using HTML and pure CSS
+#google-homepage
+Visual clone of google homepage 
