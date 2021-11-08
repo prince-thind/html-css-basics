@@ -67,28 +67,37 @@ body {
   margin: 2rem auto;
 }
 .feature {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* border: 5px ridge gray; */
-  padding: 0.5em;
-  margin:2rem;
+  padding: 1rem;
+  padding-top: 0;
+  margin: 2rem;
   background-color: hsl(31, 45%, 80%);
-  box-shadow: 0.1rem 0.1rem 0.5rem 0.1rem hsl(31, 45%, 40%);
+  box-shadow: 0.2rem 0.2rem 0.2rem 0 hsl(31, 45%, 50%);
+  font-family: "Times New Roman", Times, serif;
 }
-.feature > img {
-  max-width: 5rem;
+.feature > h2 {
+  padding: 1rem;
 }
-.feature-text {
+.feature img {
+  width: 4rem;
+  /* border-radius: 50%; */
+  /* background-color: black; */
+}
+.feature-description {
+  display: flex;
   text-align: justify;
-  padding: 1em;
 }
-.feature-text > h2 {
-  text-align: center;
+.feature-description > p {
+  padding-left: 0.5rem;
 }
+
 .embeded-video {
   background-color: rgb(231, 222, 209);
-  padding: 1em;
+  padding: 3rem 0;
+}
+
+.video-frame {
+  width: 70vmin;
+  height: 70vmin;
 }
 .accessibility {
   position: absolute;
@@ -96,7 +105,7 @@ body {
   overflow: hidden;
 }
 .form {
-  padding: 1em;
+  padding: 1rem;
 }
 .form-input {
   padding: 0.5em;
@@ -104,10 +113,15 @@ body {
 .form-button {
   display: block;
   margin: 0.5em auto;
-  padding: 0.5em;
-  background-color: rgb(116, 105, 71);
+  padding: 0.5rem 1rem;
+  background-color: hsl(209, 75%, 20%);
   color: white;
+  /* border:none; */
 }
+.form-button:hover {
+  cursor: pointer;
+}
+
 .showcase-watches {
   display: flex;
   list-style-type: none;
@@ -118,10 +132,10 @@ body {
   margin: 1em;
   max-width: 15vw;
   border: 2px solid black;
-  background-color: rgb(211, 189, 143);
+  background-color: hsl(31, 45%, 80%);
 }
 .showcase-head {
-  background: radial-gradient(hsl(0, 0%, 50%), hsl(0, 0%, 68%));
+  background: radial-gradient(hsl(0, 0%, 20%), hsl(0, 0%, 10%));
   padding: 1em;
   color: white;
 }
@@ -140,6 +154,10 @@ body {
   background-color: orange;
   text-decoration: none;
   color: black;
+  border: 1px solid gray;
+}
+.showcase-submit:hover {
+  transform: scale(1.05);
 }
 .showcase-submit:visited {
   text-decoration: none;
@@ -147,9 +165,13 @@ body {
 }
 .footer {
   display: flex;
-  justify-content: flex-end;
-  background-color: rgb(54, 54, 54);
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: hsl(0, 0%, 9%);
+  border-top: 2px solid gray;
+  color: white;
 }
+
 .footer-item {
   padding: 1em;
   color: white;
@@ -160,34 +182,24 @@ body {
   text-decoration: none;
 }
 .footer-item:hover {
-  background-color: gray;
+  background-color: hsl(0, 0%, 0%);
 }
 
 /*media queries*/
-/*
-
-@media only screen and (max-width: 750px) {
-  body {
-    font-size: 0.8rem;
-  }
+@media only screen and (max-width: 760px) {
   .header {
     padding: 0;
   }
   .nav-item > a {
-    padding: 0;
+    padding: 0.5rem;
   }
-  .nav-list{
-    gap:1em;
-  }
-  .feature-list{
+  .feature-list {
     width: 90%;
   }
-  .showcase-watches{
+  .showcase-watches {
     flex-direction: column;
   }
   .showcase-box {
     max-width: 50vw;
   }
 }
-
-*/
