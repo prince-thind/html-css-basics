@@ -106,6 +106,6 @@ body {
 
 @keyframes main {
   100% {
-    transform: rotate(10000deg);
+    transform: rotate(7200deg);
   }
 }
