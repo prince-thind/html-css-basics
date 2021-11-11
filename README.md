@@ -1,2 +1,2 @@
 # newtons-disc
-fun little project- creates newton's discs using basic js and css
+use simple css animations and basic controls in js to mimic newton's disc inside of an browser
