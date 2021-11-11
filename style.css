@@ -7,6 +7,8 @@
 }
 body {
   background-color: hsl(240, 30%, 25%);
+  background: radial-gradient(hsl(240, 30%, 35%),hsl(240, 30%, 15%));
+
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -14,7 +16,8 @@ body {
 .heading {
   text-align: center;
   border: 1px solid rgb(0, 0, 0);
-  background-color: hsl(240, 30%, 15%);
+  /* background-color: hsl(240, 30%, 15%); */
+  background: linear-gradient(hsl(240, 30%, 35%),hsl(240, 30%, 15%));
   padding: 1rem;
   color: white;
   text-shadow: 1px 1px 2px black;
@@ -27,7 +30,8 @@ body {
   margin: 0 auto;
   border: 1px solid rgb(0, 0, 0);
   border-top: none;
-  background-color: hsl(120, 100%, 20%);
+  background: radial-gradient(hsl(120, 30%, 45%),hsl(120, 30%, 10%));
+
   box-sizing: border-box;
   padding: 5rem;
 }
@@ -35,7 +39,10 @@ body {
 .heart-container {
   flex: 1;
   border: 5px ridge rgb(27, 27, 27);
-  background-color: hsl(30, 30%, 90%);
+  background-color: hsl(30, 0%, 75%);
+  /* background: radial-gradient(hsl(120, 30%, 100%),hsl(120, 30%, 10%)); */
+  /* background:  gray; */
+
   display: flex;
   justify-content: center;
   align-items: center;
