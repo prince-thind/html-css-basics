@@ -8,38 +8,52 @@ body {
   background-color: hsl(0, 0%, 9%);
   color: white;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+
   min-height: 100vh;
 }
-
-.emoji{
-    background: radial-gradient(yellow,black);
-    --side:50vmin;
-    width: var(--side);
-    height: var(--side);
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    border: 5px solid black;
-    border-radius: 50%;
-    box-sizing: border-box;
-    gap:20%;
-    /* padding:15% 0; */
+.heading{
+    padding:0.5rem;
+    background-color: hsl(60, 50%, 20%);
+}
+.main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.eyes{
-    display: flex;
-    justify-content: center;
-    gap:20%;
-}
-.eye{
-    transform: scale(5) scaleY(1.2) rotate(360deg);
-}
-.mouth{
-    background-color: blue;
-    width: 50%;
-    border:5px solid black;
-    margin:0 auto;
+.emoji {
+  background: radial-gradient(yellow, black);
+  --side: 50vmin;
+  width: var(--side);
+  height: var(--side);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 5px solid black;
+  border-radius: 50%;
+  box-sizing: border-box;
+  gap: 20%;
+  /* padding:15% 0; */
 }
 
+.eyes {
+  display: flex;
+  justify-content: center;
+  gap: 20%;
+}
+.eye {
+  transform: scale(5) scaleY(1.2) rotate(360deg);
+}
+.mouth {
+  background-color: blue;
+  width: 50%;
+  border: 5px solid black;
+  margin: 0 auto;
+}
+.footer{
+    background-color: black;
+    border-top:2px solid white;
+    padding:0.5rem;
+}
