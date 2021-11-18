@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  text-align: center;
+  background-color: hsl(0, 0%, 9%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.emoji{
+    background: radial-gradient(yellow,black);
+    --side:50vmin;
+    width: var(--side);
+    height: var(--side);
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    border: 5px solid black;
+    border-radius: 50%;
+    box-sizing: border-box;
+    gap:20%;
+    /* padding:15% 0; */
+}
+
+.eyes{
+    display: flex;
+    justify-content: center;
+    gap:20%;
+}
+.eye{
+    transform: scale(5) scaleY(1.2) rotate(360deg);
+}
+.mouth{
+    background-color: blue;
+    width: 50%;
+    border:5px solid black;
+    margin:0 auto;
+}
+
