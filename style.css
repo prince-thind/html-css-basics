@@ -35,7 +35,6 @@ body {
   border-radius: 50%;
   box-sizing: border-box;
   gap: 20%;
-  /* padding:15% 0; */
 }
 
 .eyes {
@@ -44,7 +43,14 @@ body {
   gap: 20%;
 }
 .eye {
-  transform: scale(5) scaleY(1.2) rotate(360deg);
+  /* transform: scale(5) scaleY(1.2) rotate(360deg); */
+
+  padding:1rem;
+  /* background-color: black; */
+
+  border-bottom:1rem solid black;
+  border-left:1rem solid black;
+  transform: rotate(-45deg);
 }
 .mouth {
   background-color: blue;
