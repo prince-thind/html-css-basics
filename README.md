@@ -1,2 +1,2 @@
-# html-css-basics
-a repository containing a collection of basic html and css pages
+# neon-text
+neon-text effect using pure css
