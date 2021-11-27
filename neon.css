@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
 .neon-text {
   font-size: 5rem;
   color: white;
   text-shadow: 0 0 1rem hsl(120, 70%, 50%);
   position: relative;
   white-space: pre;
+  font-family: 'Quicksand', sans-serif;
 }
 .neon-text::after {
   content: attr(data-neon);

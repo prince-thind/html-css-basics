@@ -21,7 +21,7 @@ main {
   padding: 0.2em;
 }
 .footer {
-  background-color: hsl(0, 0%, 10%);
+  background-color: hsl(0, 0%, 0%);
   padding: 0.5em;
   border-top: 1px solid white;
 }
