@@ -1,4 +1,4 @@
-const mainText="Let Them Assume"
+const mainText="Let Them \nAssume"
 
 const target=document.querySelector('#target');
 target.textContent=mainText;
