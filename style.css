@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heading {
+  background: radial-gradient(hsl(240, 50%, 20%), hsl(240, 50%, 10%));
+  padding: 0.2em;
+}
+.footer {
+  background-color: hsl(0, 0%, 10%);
+  padding: 0.5em;
+  border-top: 1px solid white;
+}
