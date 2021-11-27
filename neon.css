@@ -1,0 +1,29 @@
+.neon-text {
+  font-size: 5rem;
+  color: white;
+  text-shadow: 0 0 1rem hsl(120, 70%, 50%);
+  position: relative;
+}
+.neon-text::after {
+  content: attr(data-neon);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: hsl(120, 50%, 50%);
+  z-index: -1;
+  filter: blur(0.1rem);
+  /* padding: 1rem; */
+}
+.neon-text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -2;
+  background-color: hsl(120, 50%, 50%);
+  opacity: 0.2;
+  filter: blur(4rem);
+
+}
