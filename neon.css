@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
 .neon-text {
-  font-size: 5rem;
+  font-size: 3rem;
   color: white;
   text-shadow: 0 0 1rem hsl(120, 70%, 50%);
   position: relative;
