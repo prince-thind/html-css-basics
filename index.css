@@ -6,4 +6,5 @@
 
 #canvas {
   background-color: black;
+  filter:blur(5px)
 }
