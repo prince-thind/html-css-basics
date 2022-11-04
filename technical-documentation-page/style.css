@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  text-align: center;
+}
+.heading {
+  background-color: rgb(22, 22, 22);
+  padding: 0.5em;
+  color: white;
+}
+main {
+  display: flex;
+}
+.nav-bar {
+  background-color: rgb(30, 77, 83);
+  color: white;
+  border-right: 5px ridge gray;
+  position: sticky;
+  top: 0;
+  max-height: 100vh;
+  overflow-y: scroll;
+}
+.nav-heading {
+  padding: 0.5em 1em;
+  background-color: rgb(63, 63, 63);
+}
+.nav-link {
+  display: block;
+  color: white;
+  padding: 1em;
+  text-decoration: none;
+}
+.nav-link:visited {
+  color: white;
+}
+.nav-link:hover {
+  background-color: hsl(187, 50%, 15%);
+}
+.content {
+  flex: 1;
+}
+.section {
+  border-bottom: 5px ridge gray;
+  padding: 1em;
+  text-align: justify;
+}
+.section-heading {
+  padding: 0.5em;
+  background-color: rgb(196, 220, 228);
+  text-align: center;
+}
+.section-para {
+  width: 90%;
+  margin: 1em auto;
+}
+.section-code {
+  background-color: gray;
+  padding: 1em;
+  border: 1px solid black;
+  display: block;
+  max-width: 50vw;
+  margin: 1em auto;
+  color: white;
+}
+.section-list {
+  padding: 1em;
+  padding-left: 3em;
+  text-align: left;
+}
+.section-list > li {
+  margin-bottom: 1em;
+}
+.footer {
+  color: white;
+  padding: 0.5em;
+  background-color: rgb(22, 22, 22);
+}
+
+@media only screen and (max-width: 750px) {
+  main {
+    flex-direction: column;
+  }
+  .nav-bar {
+    overflow-y: initial;
+    display: flex;
+    border-right: none;
+    border-bottom: 5px ridge gray;
+  }
+  .nav-heading {
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-list {
+    display: flex;
+    overflow-x: scroll;
+    list-style-type: none;
+  }
+  .section-code {
+    max-width: 60vw;
+  }
+}
