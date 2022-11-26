@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  min-height: 100vh;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(gray, rgb(37, 24, 24)) fixed no-repeat;
+}
+.heading {
+  background-color: rgb(4, 26, 4);
+  padding: 0.5em;
+  border-bottom: 3px black solid;
+}
+.main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.device {
+  padding: 1em;
+  background: radial-gradient(rgb(53, 53, 110), black);
+  border: 2px solid white;
+  margin: 1em;
+}
+.disc-frame {
+  --side:80vmin;
+  width: var(--side);
+  height: var(--side);
+  background: radial-gradient(rgb(58, 48, 38), black);
+  border: 2px solid gray;
+  margin-bottom: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.disc {
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+.rainbow {
+  background: conic-gradient(
+    hsl(0, 75%, 50%),
+    hsl(10, 75%, 50%),
+    hsl(20, 75%, 50%),
+    hsl(30, 75%, 50%),
+    hsl(40, 75%, 50%),
+    hsl(50, 75%, 50%),
+    hsl(60, 75%, 50%),
+    hsl(70, 75%, 50%),
+    hsl(80, 75%, 50%),
+    hsl(90, 75%, 50%),
+    hsl(100, 75%, 50%),
+    hsl(110, 75%, 50%),
+    hsl(120, 75%, 50%),
+    hsl(130, 75%, 50%),
+    hsl(140, 75%, 50%),
+    hsl(150, 75%, 50%),
+    hsl(160, 75%, 50%),
+    hsl(170, 75%, 50%),
+    hsl(180, 75%, 50%),
+    hsl(190, 75%, 50%),
+    hsl(200, 75%, 50%),
+    hsl(210, 75%, 50%),
+    hsl(220, 75%, 50%),
+    hsl(230, 75%, 50%),
+    hsl(240, 75%, 50%),
+    hsl(250, 75%, 50%),
+    hsl(260, 75%, 50%),
+    hsl(270, 75%, 50%),
+    hsl(280, 75%, 50%),
+    hsl(290, 75%, 50%),
+    hsl(300, 75%, 50%),
+    hsl(310, 75%, 50%),
+    hsl(320, 75%, 50%),
+    hsl(330, 75%, 50%),
+    hsl(340, 75%, 50%),
+    hsl(350, 75%, 50%),
+    hsl(360, 75%, 50%)
+  );
+}
+
+.control {
+  padding: 1em;
+  color: white;
+  background-color: rgb(34, 55, 56);
+}
+.control:hover {
+  transform: scale(1.1);
+}
+.control:active {
+  background-color: rgb(19, 30, 31);
+  transform: scale(1);
+}
+
+/*js classes*/
+.main-animation {
+  animation: main 1s forwards infinite linear;
+}
+
+@keyframes main {
+  100% {
+    transform: rotate(7200deg);
+  }
+}
